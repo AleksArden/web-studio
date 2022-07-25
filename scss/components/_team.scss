@@ -1,0 +1,8 @@
+.team {
+  @include section;
+  background-color: var(--color-background-third);
+}
+
+.team__title {
+  margin-bottom: 50px;
+}

@@ -1,0 +1,10 @@
+@mixin section ($p-top: 94px, $p-bottom: 94px) {
+    padding-top: $p-top;
+    padding-bottom: $p-bottom;
+}
+
+@mixin flexed ($type: flex, $al-it: center, $jc: center) {
+    display: $type;
+    align-items: $al-it;
+    justify-content: $jc;
+}

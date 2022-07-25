@@ -1,0 +1,23 @@
+.footer {
+  @include section (60px, 60px);
+
+  background-color: var(--color-background-primary);
+}
+
+.footer__container {
+@include flexed (flex, baseline, null);
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+
+.footer__social {
+  margin-left: auto;
+}
+
+.footer__form {
+  margin-left: 93px;
+}

@@ -1,0 +1,26 @@
+.logo {
+  transition: color var(--time-duration) var(--timing-function);
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  &--black {
+    color: #000;
+  }
+
+  &--white {
+    color: var(--color-text-background);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &__text {
+    color: var(--accent-color);
+  }
+}

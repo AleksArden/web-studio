@@ -1,0 +1,11 @@
+.projects {
+@include section;
+
+  background-color: var(--color-text-background); 
+}
+
+
+.projects__menu {
+  margin-bottom: 50px;
+}
+

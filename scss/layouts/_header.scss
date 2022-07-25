@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-text-background);
+}
+
+.header__container {
+ @include flexed (flex, center, null);
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header__list {
+  margin-left: auto;
+}
+
+

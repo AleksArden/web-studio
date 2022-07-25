@@ -1,0 +1,9 @@
+.clients {
+  @include section;
+  background-color: var(--color-text-background);
+}
+
+
+.clients__title {
+  margin-bottom: 50px;
+}

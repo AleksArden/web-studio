@@ -1,0 +1,11 @@
+.features {
+  @include section (null);
+
+  background-color: var(--color-text-background);
+}
+
+.features__title {
+  margin-bottom: 50px;
+}
+
+

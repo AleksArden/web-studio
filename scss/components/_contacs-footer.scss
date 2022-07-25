@@ -1,0 +1,25 @@
+.contacs-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contacs-footer__adress {
+  margin-bottom: 9px;
+  color: var(--color-text-background);
+}
+
+.contacs-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacs-footer__link {
+  transition: color var(--time-duration) var(--timing-function);
+  color: var(--color-footer-link);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

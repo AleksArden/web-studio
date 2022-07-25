@@ -1,0 +1,30 @@
+.header-contacs {
+  display: flex;
+  gap: 30px;
+  
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-contacs__link {
+  @include flexed (inline-flex, center, null);
+  display: inline-flex;
+  align-items: center;
+  padding: 32px 0;
+
+  transition: color var(--time-duration) var(--timing-function);
+
+  color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-contacs__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
