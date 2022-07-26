@@ -8,3 +8,7 @@
     align-items: $al-it;
     justify-content: $jc;
 }
+
+@mixin flex-besed ($items, $indent) {
+    flex-basis: calc((100% - $indent * ($items - 1)) /$items);
+}

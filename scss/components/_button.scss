@@ -11,8 +11,9 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
+    @include flexed (flex, center, null);
+    // display: flex;
+    // align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;

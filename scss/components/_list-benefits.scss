@@ -4,7 +4,7 @@
 }
 
 .list-benefits__item {
-    flex-basis: calc((100% - 30px * 3) / 4);
+    @include flex-besed (4, 30px);
 }
 
 .list-benefits__box-icon {
