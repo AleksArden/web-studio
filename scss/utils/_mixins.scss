@@ -1,14 +1,58 @@
-@mixin section ($p-top: 94px, $p-bottom: 94px) {
-    padding-top: $p-top;
-    padding-bottom: $p-bottom;
+@mixin section($p-top: 94px, $p-bottom: 94px) {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
 }
 
-@mixin flexed ($type: flex, $al-it: center, $jc: center) {
-    display: $type;
-    align-items: $al-it;
-    justify-content: $jc;
+@mixin flexed($al-it: center, $jc: center) {
+  display: flex;
+  align-items: $al-it;
+  justify-content: $jc;
 }
 
-@mixin flex-besed ($items, $indent) {
-    flex-basis: calc((100% - $indent * ($items - 1)) /$items);
+@mixin flex-besed($items, $indent) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}
+
+
+
+@mixin mq($type) {
+  $mob: 480px;
+  $tab: 768px;
+  $desk: 1200px;
+
+  @if $type ==mob-only {
+    @media screen and (max-width: ($tab - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type ==mob {
+    @media screen and (min-width: $mob) {
+      @content;
+    }
+  }
+
+  @if $type ==tab {
+    @media screen and (min-width: $tab) {
+      @content;
+    }
+  }
+
+  @if $type ==tab-only {
+    @media screen and (min-width: $tab) and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type ==desk {
+    @media screen and (min-width: $desk) {
+      @content;
+    }
+  }
+
+  @if $type ==no-desk {
+    @media screen and (max-width: ($desk - 0.02)) {
+      @content;
+    }
+  }
 }

@@ -1,25 +1,25 @@
-.product-list {
-    display: flex;
-    gap: 30px;
-} 
+// .product-list {
+//     @include flexed (null, null);
+//     gap: 30px;
+// } 
 
-.product-list__item {
-    position: relative;
-}
+// .product-list__item {
+//     position: relative;
+// }
 
-.product-list__overlay {
-    position: absolute;
+// .product-list__overlay {
+//     position: absolute;
 
-   @include flexed;
+//    @include flexed;
    
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
+//     left: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 70px;
 
-    background: var(--bg-cards-benefits);
-}
+//     background: var(--bg-cards-benefits);
+// }
 
-.product-list__name {
-    color: var(--color-text-background);
-}
+// .product-list__name {
+//     color: var(--color-text-background);
+// }

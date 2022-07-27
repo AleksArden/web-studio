@@ -1,58 +1,58 @@
-.form-mail {}
+// .form-mail {}
 
 
-.form-mail__cta {
-  margin-bottom: 20px;
+// .form-mail__cta {
+//   margin-bottom: 20px;
 
-  color: var(--color-text-background);
-}
+//   color: var(--color-text-background);
+// }
 
-.form-mail__form {
- @include flexed (flex, center, null);
-  gap: 12px;
-}
+// .form-mail__form {
+//  @include flexed (center, null);
+//   gap: 12px;
+// }
 
-.form-mail__form-field {
-  width: 358px;
-  height: 50px;
-}
+// .form-mail__form-field {
+//   width: 358px;
+//   height: 50px;
+// }
 
-.form-mail__input {
-@include flexed (flex, center, null);
+// .form-mail__input {
+// @include flexed (center, null);
 
-  padding: 15px 10px;
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  border: 1px solid var(--color-border-footer-input);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  outline: none;
+//   padding: 15px 10px;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 4px;
+//   border: 1px solid var(--color-border-footer-input);
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   outline: none;
 
-  transition: border-color var(--time-duration) var(--timing-function);
+//   transition: border-color var(--time-duration) var(--timing-function);
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25em;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.25em;
 
   
-  letter-spacing: 0.03em;
-  color: var(--color-text-background);
-  background-color: var(--color-background-primary);
+//   letter-spacing: 0.03em;
+//   color: var(--color-text-background);
+//   background-color: var(--color-background-primary);
 
-  &:focus {
-    border-color: var(--accent-color);
-  }
+//   &:focus {
+//     border-color: var(--accent-color);
+//   }
 
-  &::placeholder {
-    color: var(--color-placeholder-footer);
-  }
-}
+//   &::placeholder {
+//     color: var(--color-placeholder-footer);
+//   }
+// }
 
-.form-mail__btn {
-  gap: 10px;
-  padding: 10px 28px;
-}
+// .form-mail__btn {
+//   gap: 10px;
+//   padding: 10px 28px;
+// }
 
-.form-mail__icon {
-  fill: currentColor;
-}
+// .form-mail__icon {
+//   fill: currentColor;
+// }

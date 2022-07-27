@@ -1,34 +1,34 @@
-  .company-cards {
-    @include flexed (flex, center, null);
+//   .company-cards {
+//     @include flexed (center, null);
    
-    gap: 30px;
-  }
+//     gap: 30px;
+//   }
   
-  .company-cards__item {
-  width: 170px;
-  height: 92px;
-}
+//   .company-cards__item {
+//   width: 170px;
+//   height: 92px;
+// }
 
-.company-cards__link {
-  @include flexed;
+// .company-cards__link {
+//   @include flexed;
 
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--fill-icons);
-  border-radius: 4px;
+//   width: 100%;
+//   height: 100%;
+//   border: 1px solid var(--fill-icons);
+//   border-radius: 4px;
 
-  transition: color var(--time-duration) var(--timing-function),
-    border-color var(--time-duration) var(--timing-function);
+//   transition: color var(--time-duration) var(--timing-function),
+//     border-color var(--time-duration) var(--timing-function);
 
-  color: var(--fill-icons);
+//   color: var(--fill-icons);
 
-  &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-      color: var(--accent-color);
-    }
-}
+//   &:hover,
+//     &:focus {
+//       border-color: var(--accent-color);
+//       color: var(--accent-color);
+//     }
+// }
 
-.company-cards__icon {
-  fill: currentColor;
-}
+// .company-cards__icon {
+//   fill: currentColor;
+// }
