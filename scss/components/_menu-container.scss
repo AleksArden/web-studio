@@ -1,0 +1,15 @@
+.menu-container {
+  @include mq(mob-only) {
+    display: none;
+  }
+
+  @include mq(tab) {
+    @include flexed(center, null);
+    gap: 84px;
+  }
+
+  @include mq(desk) {
+    @include flexed(center, null);
+    gap: 305px;
+  }
+}

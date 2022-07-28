@@ -9,7 +9,7 @@
   justify-content: $jc;
 }
 
-@mixin flex-besed($items, $indent) {
+@mixin flex-besed($items, $indent: 30px) {
   flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 }
 

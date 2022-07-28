@@ -1,26 +1,31 @@
-// .logo {
-//   transition: color var(--time-duration) var(--timing-function);
+.logo {
+  transition: color var(--time-duration) var(--timing-function);
 
-//   font-family: 'Raleway';
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.2;
-//   letter-spacing: 0.03em;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 
-//   &--black {
-//     color: #000;
-//   }
+  @include mq(desk) {
+    font-size: 26px;
+      line-height: 1.19;
+  }
 
-//   &--white {
-//     color: var(--color-text-background);
-//   }
+  &--black {
+    color: #000;
+  }
 
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
+  &--white {
+    color: var(--color-text-background);
+  }
 
-//   &__text {
-//     color: var(--accent-color);
-//   }
-// }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &__text {
+    color: var(--accent-color);
+  }
+}

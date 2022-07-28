@@ -1,18 +1,37 @@
-// .header {
-//   border-bottom: 1px solid var(--color-border);
-//   background-color: var(--color-text-background);
-// }
+.header {
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-text-background);
+}
 
-// .header__container {
-//  @include flexed (center, null);
-// }
+.header__container {
+  @include flexed(center, space-between);
 
-// .header__logo {
-//   margin-right: 93px;
-// }
+  @include mq(tab) {
+    @include flexed(null, null);
+    gap: 88px;
+  }
 
-// .header__list {
-//   margin-left: auto;
-// }
+  @include mq(desk) {
+    @include flexed(null, null);
+      gap: 93px;
+  }
+}
 
+.header__btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 0;
+  border: none;
+  background-color: transparent;
+  fill: var(--title-text-color);
 
+  @include mq(tab) {
+    display: none;
+  }
+  
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+ 

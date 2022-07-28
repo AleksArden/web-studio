@@ -128,5 +128,10 @@
                 stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8533"
                 d="M13.858 21.999l-5.564-5.308-1.894 1.794 7.458 7.115 16.009-15.273-1.882-1.794-14.127 13.466z"></path>
         </symbol>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+            <path
+                d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z">
+            </path>
+        </symbol>
     </defs>
 </svg>
