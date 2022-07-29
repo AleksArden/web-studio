@@ -10,22 +10,22 @@ $hero-gradient: linear-gradient(var(--color-gradient), var(--color-gradient));
   text-align: center;
   background-color: var(--color-background-primary);
 
-  background-image: $hero-gradient, url(/images/hero/hero-background-image-mob@1x.jpg);
+  background-image: $hero-gradient, url(../images/hero/hero-background-image-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: $hero-gradient, url(/images/hero/hero-background-image-mob@2x.jpg);
+    background-image: $hero-gradient, url(../images/hero/hero-background-image-mob@2x.jpg);
   }
 
   @media screen and (min-width: 481px) {
     max-width: 768px;
     @media (min-width: 481px) {
-      background-image: $hero-gradient, url(/images/hero/hero-background-image-tab@1x.jpg);
+      background-image: $hero-gradient, url(../images/hero/hero-background-image-tab@1x.jpg);
     }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: $hero-gradient, url(/images/hero/hero-background-image-tab@2x.jpg);
+      background-image: $hero-gradient, url(../images/hero/hero-background-image-tab@2x.jpg);
     }
   }
 
@@ -35,11 +35,11 @@ $hero-gradient: linear-gradient(var(--color-gradient), var(--color-gradient));
     padding: 200px 0;
 
     @media (min-width: 769px) {
-      background-image: $hero-gradient, url(/images/hero/hero-background-image@1x.jpg);
+      background-image: $hero-gradient, url(../images/hero/hero-background-image@1x.jpg);
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: $hero-gradient, url(/images/hero/hero-background-image@2x.jpg);
+      background-image: $hero-gradient, url(../images/hero/hero-background-image@2x.jpg);
     }
   }
 }

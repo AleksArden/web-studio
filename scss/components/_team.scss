@@ -1,8 +1,16 @@
-// .team {
-//   @include section;
-//   background-color: var(--color-background-third);
-// }
+.team {
+  @include section(60px, 60px);
+  background-color: var(--color-background-third);
 
-// .team__title {
-//   margin-bottom: 50px;
-// }
+  @include mq(desk) {
+    @include section;
+  }
+}
+
+.team__title {
+  margin-bottom: 30px;
+
+  @include mq(desk) {
+    margin-bottom: 50px;
+  }
+}

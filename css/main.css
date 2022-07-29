@@ -83,6 +83,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -159,6 +160,7 @@ a {
   border: none;
   background-color: transparent;
   fill: var(--title-text-color);
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .header__btn {
@@ -177,16 +179,16 @@ a {
   padding: 118px 0;
   text-align: center;
   background-color: var(--color-background-primary);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(/images/hero/hero-background-image-mob@1x.jpg);
-  background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(/images/hero/hero-background-image-mob@1x.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero/hero-background-image-mob@1x.jpg);
+  background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(../images/hero/hero-background-image-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(/images/hero/hero-background-image-mob@2x.jpg);
-    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(/images/hero/hero-background-image-mob@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero/hero-background-image-mob@2x.jpg);
+    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(../images/hero/hero-background-image-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 481px) {
@@ -196,14 +198,14 @@ a {
 }
 @media screen and (min-width: 481px) and (min-width: 481px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(/images/hero/hero-background-image-tab@1x.jpg);
-    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(/images/hero/hero-background-image-tab@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero/hero-background-image-tab@1x.jpg);
+    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(../images/hero/hero-background-image-tab@1x.jpg);
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(/images/hero/hero-background-image-tab@2x.jpg);
-    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(/images/hero/hero-background-image-tab@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero/hero-background-image-tab@2x.jpg);
+    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(../images/hero/hero-background-image-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 769px) {
@@ -215,14 +217,14 @@ a {
 }
 @media screen and (min-width: 769px) and (min-width: 769px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(/images/hero/hero-background-image@1x.jpg);
-    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(/images/hero/hero-background-image@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero/hero-background-image@1x.jpg);
+    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(../images/hero/hero-background-image@1x.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(/images/hero/hero-background-image@2x.jpg);
-    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(/images/hero/hero-background-image@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-gradient)), to(var(--color-gradient))), url(../images/hero/hero-background-image@2x.jpg);
+    background-image: linear-gradient(var(--color-gradient), var(--color-gradient)), url(../images/hero/hero-background-image@2x.jpg);
   }
 }
 
@@ -484,6 +486,249 @@ a {
   letter-spacing: 0.03em;
 }
 
+.features {
+  padding-bottom: 94px;
+  background-color: var(--color-text-background);
+}
+@media screen and (max-width: 1199.98px) {
+  .features {
+    display: none;
+  }
+}
+
+.features__title {
+  margin-bottom: 50px;
+}
+
+.product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.product-list__item {
+  position: relative;
+}
+
+.product-list__overlay {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: var(--bg-cards-benefits);
+}
+
+.product-list__name {
+  color: var(--color-text-background);
+}
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-background-third);
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__title {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
+}
+
+.person-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.person-cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 24px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--color-text-background);
+}
+@media screen and (min-width: 1200px) {
+  .person-cards__item {
+    padding-bottom: 30px;
+  }
+}
+
+.person-cards__image {
+  margin-bottom: 30px;
+}
+
+.person-cards__name {
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.person-cards__position {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.social-list__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: color var(--time-duration) var(--timing-function), background-color var(--time-duration) var(--timing-function);
+  transition: color var(--time-duration) var(--timing-function), background-color var(--time-duration) var(--timing-function);
+  color: var(--fill-icons);
+}
+.social-list__link:hover, .social-list__link:focus {
+  background-color: var(--accent-color);
+  color: var(--color-text-background);
+}
+
 .social-list__icon {
+  fill: currentColor;
+}
+
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color-text-background);
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients__title {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
+}
+
+.company-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.company-cards__item {
+  height: 92px;
+  -ms-flex-preferred-size: calc((100% - 0px) / 1);
+      flex-basis: calc((100% - 0px) / 1);
+}
+@media screen and (min-width: 480px) {
+  .company-cards__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .company-cards__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-cards__item {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+  }
+}
+
+.company-cards__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--fill-icons);
+  border-radius: 4px;
+  -webkit-transition: color var(--time-duration) var(--timing-function), border-color var(--time-duration) var(--timing-function);
+  transition: color var(--time-duration) var(--timing-function), border-color var(--time-duration) var(--timing-function);
+  color: var(--fill-icons);
+}
+.company-cards__link:hover, .company-cards__link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.company-cards__icon {
   fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

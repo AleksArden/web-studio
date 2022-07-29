@@ -1,9 +1,19 @@
-// .clients {
-//   @include section;
-//   background-color: var(--color-text-background);
-// }
+.clients {
+    @include section(60px, 60px);
+
+    background-color: var(--color-text-background);
+
+ @include mq(desk) {
+    @include section;
+ }
+  
+}
 
 
-// .clients__title {
-//   margin-bottom: 50px;
-// }
+.clients__title {
+  margin-bottom: 30px;
+
+  @include mq(desk) {
+    margin-bottom: 50px;
+  }
+}

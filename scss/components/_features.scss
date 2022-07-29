@@ -1,11 +1,15 @@
-// .features {
-//   @include section (null);
+.features {
+@include mq(no-desk) {
+    display: none;
+}
 
-//   background-color: var(--color-text-background);
-// }
+  @include section (null);
 
-// .features__title {
-//   margin-bottom: 50px;
-// }
+  background-color: var(--color-text-background);
+}
+
+.features__title {
+  margin-bottom: 50px;
+}
 
 
