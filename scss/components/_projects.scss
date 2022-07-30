@@ -1,11 +1,23 @@
-// .projects {
-// @include section;
+.projects {
+  @include section(60px, 60px);
 
-//   background-color: var(--color-text-background); 
-// }
+  @include mq(desk) {
+    @include section;
+  }
 
+  background-color: var(--color-text-background);
+}
 
-// .projects__menu {
-//   margin-bottom: 50px;
-// }
+.projects__menu {
+    @include mq(mob-only) {
+        margin-bottom: 40px;
+    }
 
+    @include mq(tab-only) {
+        margin-bottom: 30px;
+    }
+
+  @include mq(desk) {
+    margin-bottom: 50px;
+  }
+}

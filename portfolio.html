@@ -19,50 +19,62 @@
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="header__logo logo logo--black" href="#">
           <span class="logo__text">Web</span>Studio</a
         >
-        <nav class="nav">
-          <ul class="nav__list">
+        <div class="menu-container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li>
+                <a class="nav__link" href="./index.html">Студия</a>
+              </li>
+              <li>
+                <a class="nav__link nav__link--active" href="#">Портфолио</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__list header-contacs">
             <li>
-              <a class="nav__link" href="./index.html">Студия</a>
+              <a class="header-contacs__link" href="mailto:info@devstudio.com">
+                <svg class="header-contacs__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
             <li>
-              <a class="nav__link nav__link--active" href="#">Портфолио</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Контакты</a>
+              <a class="header-contacs__link" href="tel:+380961111111">
+                <svg class="header-contacs__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="header__list header-contacs">
-          <li>
-            <a class="header-contacs__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacs__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a class="header-contacs__link" href="tel:+380961111111">
-              <svg class="header-contacs__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
+        <button class="header__btn" type="button">
+          <svg
+            class="header__icon-menu"
+            width="40"
+            height="40"
+            aria-label="кнопка открытия меню навигации"
+          >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- projects  -->
-      <!-- <section class="projects">
+      <section class="projects">
         <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1> -->
+          <h1 class="visually-hidden">Портфолио</h1>
           <!-- menu-btn -->
-          <!-- <ul class="projects__menu menu-btn">
+          <ul class="projects__menu menu-btn">
             <li>
               <button class="menu-btn__btn menu-btn__btn--active" type="button">Все</button>
             </li>
@@ -78,18 +90,69 @@
             <li>
               <button class="menu-btn__btn" type="button">Маркетинг</button>
             </li>
-          </ul> -->
+          </ul>
           <!-- portfolio -->
           <!-- <ul class="portfolio">
             <li>
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio/img1.jpg"
-                    alt="фотография веб-сайта компании"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio1-desk-webp@1x.webp 1x,
+                        ./images/portfolio/desktop/portfolio1-desk-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="min-width: 1200px"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop/portfolio1-desk@1x.jpg 1x,
+                        ./images/portfolio/desktop/portfolio1-desk@1x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="min-width: 1200px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio1-tab-webp@1x.webp 1x,
+                        ./images/portfolio/tablet/portfolio1-tab-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="min-width: 768px"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet/portfolio1-tab@1x.jpg 1x,
+                        ./images/portfolio/tablet/portfolio1-tab@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="min-width: 768px"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio1-mob-webp@1x.webp 1x,
+                        ./images/portfolio/mobile/portfolio1-mob-webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="max-width: 767px"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile/portfolio1-mob@1x.jpg 1x,
+                        ./images/portfolio/mobile/portfolio1-mob@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="max-width: 767px"
+                    />
+
+                    <img
+                      src="./images/portfolio/mobile/portfolio1-mob@1x.jpg"
+                      alt="фотография веб-сайта компании"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__proposition">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
