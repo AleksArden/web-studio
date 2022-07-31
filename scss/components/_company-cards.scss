@@ -1,24 +1,22 @@
-  .company-cards {
-    @include flexed (center, null);
-   flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .company-cards__item {
-    height: 92px;
-    @include flex-besed(1);
+.company-cards {
+  @include flexed(center, null);
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
-  @include mq(mob) {
+.company-cards__item {
+  height: 92px;
+
+  @include mq(mob-only) {
     @include flex-besed(2);
   }
-  
 
   @include mq(tab) {
     @include flex-besed(3);
   }
 
   @include mq(desk) {
-    @include flex-besed(6)
+    @include flex-besed(6);
   }
 }
 
@@ -36,10 +34,10 @@
   color: var(--fill-icons);
 
   &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-      color: var(--accent-color);
-    }
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .company-cards__icon {

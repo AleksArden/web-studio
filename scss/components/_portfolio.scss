@@ -4,9 +4,20 @@
   gap: 30px;
 }
 
+.portfolio__item {
+
+
+  @include mq(tab-only) {
+    @include flex-besed(2);
+  }
+  
+}
+
 .portfolio__link {
-  display: block;
-  border: 1px solid var(--color-border-card);
+  @include flexed(null, null);
+  flex-direction: column;
+  height: 100%;
+  outline: 1px solid var(--color-border-card);
   transition: box-shadow var(--time-duration) var(--timing-function);
 
   &:hover,
@@ -23,6 +34,11 @@
 
 .portfolio__overlay {
   position: absolute;
+
+  @media screen and (max-width: 450px) {
+      @include flexed
+  
+    }
   @include mq(mob-only) {
     padding: 77px 24px;
   }
@@ -52,9 +68,15 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 345px) {
+    font-size: 16px;
+    
+  }
 }
 
 .portfolio__content {
+  flex-grow: 1;
   padding: 20px 24px 20px 24px;
 
   background-color: var(--color-text-background);

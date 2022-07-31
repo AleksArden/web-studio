@@ -1,17 +1,26 @@
-// .footer {
-//   @include section (60px, 60px);
+.footer {
+  @include section (60px, 60px);
 
-//   background-color: var(--color-background-primary);
-// }
+  background-color: var(--color-background-primary);
+}
 
-// .footer__container {
-// @include flexed (baseline, null);
-// }
+.footer__container {
+  @include mq(mob-only) {
+    @include flexed;
+    flex-direction: column;
+  }
+@include mq(desk) {
+    @include flexed (baseline, null);
+}
+}
 
-// .footer__logo {
-//   display: inline-block;
-//   margin-bottom: 20px;
-// }
+.footer__wrapper {
+   text-align: center;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 
 
 // .footer__social {
