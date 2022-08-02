@@ -11,6 +11,7 @@
 
 
 .clients__title {
+  @extend %title;
   margin-bottom: 30px;
 
   @include mq(desk) {

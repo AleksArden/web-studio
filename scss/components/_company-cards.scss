@@ -11,7 +11,7 @@
     @include flex-besed(2);
   }
 
-  @include mq(tab) {
+  @include mq(tab-only) {
     @include flex-besed(3);
   }
 

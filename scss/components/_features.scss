@@ -9,6 +9,7 @@
 }
 
 .features__title {
+  @extend %title;
   margin-bottom: 50px;
 }
 

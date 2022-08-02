@@ -5,19 +5,18 @@
 }
 
 .portfolio__item {
-
-
   @include mq(tab-only) {
     @include flex-besed(2);
   }
-  
 }
 
 .portfolio__link {
   @include flexed(null, null);
   flex-direction: column;
+
   height: 100%;
   outline: 1px solid var(--color-border-card);
+
   transition: box-shadow var(--time-duration) var(--timing-function);
 
   &:hover,
@@ -37,17 +36,20 @@
 
   @media screen and (max-width: 450px) {
       @include flexed
-  
     }
+
   @include mq(mob-only) {
     padding: 77px 24px;
   }
+
   @include mq(tab) {
     padding: 49px 24px 77px 24px;
   }
+
   @include mq(desk) {
     padding: 63px 24px;
   }
+  
   left: 0;
   top: 0;
   width: 100%;

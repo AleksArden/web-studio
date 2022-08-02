@@ -1,5 +1,5 @@
-.header-contacs {
- font-weight: 500;
+.header-contacts {
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -13,14 +13,13 @@
   }
 }
 
-.header-contacs__item:not(:last-child) {
-    @include mq(tab-only) {
-      margin-bottom: 10px;
-    }
-    
+@include mq(tab-only) {
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
-.header-contacs__link {
+.header-contacts__link {
   display: inline-flex;
   align-items: center;
 
@@ -38,8 +37,9 @@
   }
 }
 
-.header-contacs__icon {
+.header-contacts__icon {
   margin-right: 8px;
+  
   fill: currentColor;
   @include mq(desk) {
     margin-right: 10px;

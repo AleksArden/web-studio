@@ -5,28 +5,39 @@
 }
 
 .footer__container {
-  @include mq(mob-only) {
-    @include flexed;
-    flex-direction: column;
-  }
+@include mq(tab) {
+  @include flexed(baseline);
+  flex-wrap: wrap;
+}
+
 @include mq(desk) {
-    @include flexed (baseline, null);
+    @include flexed(baseline, null);
 }
 }
 
 .footer__wrapper {
-   text-align: center;
-}
-.footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
+@include mq(no-desk) {
+  margin-bottom: 60px;
+  
 }
 
+@include mq(tab-only) {
+  margin-right: 165px;
+}
+}
 
-// .footer__social {
-//   margin-left: auto;
-// }
+.footer__social {
+  @include mq(mob-only) {
+    margin-bottom: 60px;
+  }
+  
+ @include mq(desk) {
+  margin-left: auto;
+ }
+}
 
-// .footer__form {
-//   margin-left: 93px;
-// }
+.footer__form {
+  @include mq(desk) {
+    margin-left: 93px;
+  }
+}

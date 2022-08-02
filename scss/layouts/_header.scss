@@ -13,26 +13,27 @@
 
   @include mq(desk) {
     @include flexed(null, null);
-      gap: 93px;
+    gap: 93px;
   }
 }
 
-.header__btn {
+.header__btn-open {
   display: inline-flex;
+
   margin: 0;
   padding: 10px 0;
   border: none;
+
   background-color: transparent;
   fill: var(--title-text-color);
   cursor: pointer;
 
-  @include mq(tab) {
-    display: none;
-  }
-  
   &:hover,
   &:focus {
     fill: var(--accent-color);
   }
+
+  @include mq(tab) {
+    display: none;
+  }
 }
- 

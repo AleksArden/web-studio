@@ -36,25 +36,30 @@
               </li>
             </ul>
           </nav>
-          <ul class="header-contacs">
-            <li class="header-contacs__item">
-              <a class="header-contacs__link" href="mailto:info@devstudio.com">
-                <svg class="header-contacs__icon" width="16" height="12">
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="mailto:info@devstudio.com">
+                <svg class="header-contacts__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="header-contacs__item">
-              <a class="header-contacs__link" href="tel:+380961111111">
-                <svg class="header-contacs__icon" width="10" height="16">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="tel:+380961111111">
+                <svg class="header-contacts__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use></svg
                 >+38 096 111 11 11
               </a>
             </li>
           </ul>
         </div>
-        <button class="header__btn" type="button">
+        <button
+          class="header__btn-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
           <svg
             class="header__icon-menu"
             width="40"
@@ -64,6 +69,48 @@
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="mobile-menu__btn-close js-close-menu" type="button">
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav nav-menu">
+          <ul class="">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link nav-menu__link--active" href="#">Студия</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-menu__contacts contacts-menu">
+          <li class="contacts-menu__item">
+            <a class="contacts-menu__link contacts-menu__link--big" href="#">+38 096 111 11 11</a>
+          </li>
+          <li class="contacts-menu__item">
+            <a class="contacts-menu__link" href="#">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="social-menu">
+          <li class="social-menu__item">
+            <a href="#">Instagram</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#">Twitter</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -88,7 +135,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="list-benefits__subtitle subtitle">Внимание к деталям</h3>
+              <h3 class="list-benefits__subtitle">Внимание к деталям</h3>
               <p class="list-benefits__description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
@@ -99,7 +146,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="list-benefits__subtitle subtitle">Пунктуальность</h3>
+              <h3 class="list-benefits__subtitle">Пунктуальность</h3>
               <p class="list-benefits__description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
@@ -110,7 +157,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="list-benefits__subtitle subtitle">Планирование</h3>
+              <h3 class="list-benefits__subtitle">Планирование</h3>
               <p class="list-benefits__description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
@@ -121,7 +168,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="list-benefits__subtitle subtitle">Современные технологии</h3>
+              <h3 class="list-benefits__subtitle">Современные технологии</h3>
               <p class="list-benefits__description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
@@ -132,7 +179,7 @@
       <!-- features -->
       <section class="features">
         <div class="container">
-          <h2 class="features__title title">Чем мы занимаемся</h2>
+          <h2 class="features__title">Чем мы занимаемся</h2>
           <ul class="product-list">
             <li class="product-list__item">
               <img
@@ -143,7 +190,7 @@
                 height="294"
               />
               <div class="product-list__overlay">
-                <h3 class="product-list__name subtitle">Десктопные приложения</h3>
+                <h3 class="product-list__name">Десктопные приложения</h3>
               </div>
             </li>
             <li class="product-list__item">
@@ -156,7 +203,7 @@
               />
 
               <div class="product-list__overlay">
-                <h3 class="product-list__name subtitle">Мобильные приложения</h3>
+                <h3 class="product-list__name">Мобильные приложения</h3>
               </div>
             </li>
             <li class="product-list__item">
@@ -169,7 +216,7 @@
               />
 
               <div class="product-list__overlay">
-                <h3 class="product-list__name subtitle">Дизайнерские решения</h3>
+                <h3 class="product-list__name">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
@@ -631,7 +678,7 @@
       <!-- clients-->
       <section class="clients">
         <div class="container">
-          <h2 class="clients__title title">Постоянные клиенты</h2>
+          <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="company-cards">
             <li class="company-cards__item">
               <a href="" class="company-cards__link">
@@ -712,26 +759,26 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__wrapper">
-          <a class="footer__logo logo logo--white" href="#">
+        <div class="footer__wrapper contacts-footer">
+          <a class="contacts-footer__logo logo logo--white" href="#">
             <span class="logo__text">Web</span>Studio</a
           >
-          <address class="contacs-footer">
-            <p class="contacs-footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="contacts-footer__content">
+            <p class="contacts-footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
-              <li class="contacs-footer__item">
-                <a class="contacs-footer__link" href="mailto:info@devstudio.com"
+              <li class="contacts-footer__item">
+                <a class="contacts-footer__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="contacs-footer__item">
-                <a class="contacs-footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="contacts-footer__item">
+                <a class="contacts-footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="footer__social social-footer">
-          <p class="social-footer__cta subtitle">присоединяйтесь</p>
+          <p class="social-footer__cta">присоединяйтесь</p>
           <ul class="social-list">
             <li class="social-list__item">
               <a href="#" class="social-footer__link social-list__link">
@@ -784,7 +831,7 @@
           </ul>
         </div>
         <div class="footer__form form-mail">
-          <p class="form-mail__cta subtitle">Подпишитесь на рассылку</p>
+          <p class="form-mail__cta">Подпишитесь на рассылку</p>
           <form class="form-mail__form" name="footer-form" autocomplete="off" novalidate>
             <div class="form-mail__form-field">
               <label class="visually-hidden" for="user-email">Ввести e-mail</label>
@@ -796,7 +843,7 @@
                 placeholder="E-mail"
               />
             </div>
-            <button class="form-mail__btn btn" type="submit">
+            <button class="form-mail__btn" type="submit">
               <span>Подписаться</span>
               <svg class="form-mail__icon" width="24" height="24" aria-hidden="true">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -809,7 +856,7 @@
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <!-- <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
         <button class="modal__btn-close" type="button" data-modal-close>
           <svg
             class="icon-modal-close"
@@ -819,8 +866,8 @@
           >
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
-        </button> -->
-        <!-- <form class="form" name="main-form" autocomplete="off" novalidate>
+        </button>
+        <form class="form" name="main-form" autocomplete="off" novalidate>
           <div class="form__form-field form-field">
             <label class="form-field__label" for="username">Имя</label>
             <div class="form-field__container">
@@ -870,14 +917,24 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              <span>Соглашаюсь с рассылкой и принимаю</span>
-              <a class="form-field-checkbox__link" href="#">Условия договора</a>
+              <span
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="form-field-checkbox__link" href="#">Условия договора</a>
+              </span>
             </label>
           </div>
-          <button class="form__btn btn" type="submit">Отправить</button>
-        </form> -->
+          <button class="form__btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
+    <!-- js -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

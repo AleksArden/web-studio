@@ -21,5 +21,6 @@
 }
 
 .product-list__name {
+    @extend %subtitle;
     color: var(--color-text-background);
 }

@@ -6,7 +6,7 @@
 }
 
 .list-benefits__item {
-  @include mq(tab) {
+  @include mq(tab-only) {
     @include flex-besed(2);
   }
 
@@ -26,6 +26,7 @@
 }
 
 .list-benefits__subtitle {
+  @extend %subtitle;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
