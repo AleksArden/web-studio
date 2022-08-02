@@ -1264,7 +1264,6 @@ a {
           flex-direction: column;
   left: 50%;
   top: 50%;
-  overflow-y: auto;
   width: 450px;
   height: 609px;
   border-radius: 4px;
