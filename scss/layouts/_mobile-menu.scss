@@ -20,8 +20,8 @@
     background-color: var(--color-text-background);
 
     &.is-open {
-        transform: translateY(0);
-      }
+      transform: translateY(0);
+    }
   }
 
   .mobile-menu__btn-close {
@@ -56,9 +56,9 @@
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-   @include mq(min-mob) {
-    font-size: 32px;
-   }
+    @include mq(min-mob) {
+      font-size: 32px;
+    }
   }
 
   .nav-menu__item:not(:last-child) {
@@ -89,9 +89,9 @@
 
   .contacts-menu__item:not(:last-child) {
     margin-bottom: 32px;
-   @include mq(min-mob) {
-    margin-bottom: 24px;
-   }
+    @include mq(min-mob) {
+      margin-bottom: 24px;
+    }
   }
 
   .contacts-menu__link {
@@ -104,12 +104,11 @@
 
     &--big {
       color: var(--accent-color);
-
-      @media screen and (min-width: 380px) {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.18;
-        letter-spacing: 0.02em;
+      font-size: 34px;
+      line-height: 1.17;
+      @include mq(min-mob) {
+        font-size: 24px;
+        line-height: 1.17;
       }
     }
 
@@ -129,11 +128,8 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    @media screen and (max-width: 440px) {
-      font-size: 14px;
-    }
     @include mq(min-mob) {
-      font-size: 10px;
+      font-size: 14px;
     }
   }
 

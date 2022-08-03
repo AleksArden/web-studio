@@ -16,13 +16,12 @@
 
 
 @mixin mq($type) {
-  $min-mob: 380px;
   $mob: 480px;
   $tab: 768px;
   $desk: 1200px;
 
   @if $type ==min-mob {
-      @media screen and (max-width: $min-mob) {
+      @media screen and (max-width: ($mob - 0.02)) {
         @content;
       }
     }

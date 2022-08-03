@@ -43,5 +43,13 @@
   fill: currentColor;
   @include mq(desk) {
     margin-right: 10px;
+   &--envelope-more {
+    width: 16px;
+    height: 12px;
+   }
+   &--smartphone-more {
+    width: 10px;
+    height: 16px;
+   }
   }
 }
