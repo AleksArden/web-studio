@@ -1,27 +1,18 @@
-(() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
-  };
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+getRef('.js-open-menu').addEventListener('click', onToggleMenu);
+getRef('.js-close-menu').addEventListener('click', onToggleMenu);
 
-  // Закрываем мобильное меню на более широких экранах
-  // в случае изменения ориентации устройства.
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
-})();
+function onToggleMenu() {
+  getRef('.js-menu-container').classList.toggle('is-open');
+  const isOpenMenu = getRef('.js-menu-container').classList.contains('is-open');
+  const scrollLockMethod = isOpenMenu ?
+    'disableBodyScroll' : 'enableBodyScroll';
+  bodyScrollLock[scrollLockMethod](document.body);
+}
+
+window.matchMedia('(min-width: 768px)').addEventListener('change', onCloseMenu);
+function onCloseMenu(evt) {
+  if (!evt.matches) return;
+  getRef('.js-menu-container').classList.remove('is-open');
+  bodyScrollLock.enableBodyScroll(document.body);
+
+}
